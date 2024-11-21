@@ -1,15 +1,18 @@
 import tkinter as tk
+import random
 
-# Variables de jeu
-SCREEN_WIDTH = 500
-SCREEN_HEIGHT = 500
+# Game configurations
+GAME_WIDTH = 600
+GAME_HEIGHT = 400
+SQUARE_SIZE = 20
+GAME_SPEED = 100
+SNAKE_COLOR = "green"
+FOOD_COLOR = "red"
+BACKGROUND_COLOR = "black"
 
 root = tk.Tk()
-
-root.geometry("{}x{}".format(SCREEN_WIDTH, SCREEN_HEIGHT))
 root.title("Snake")
-
-canvas = tk.Canvas(root, width=500, height=500, bg='ivory')
-canvas.pack()
+root.geometry("{}x{}".format(GAME_WIDTH, GAME_HEIGHT))
+root.resizable(width=False, height=False)
 
 root.mainloop()
